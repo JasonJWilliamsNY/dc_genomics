@@ -51,7 +51,7 @@ Lessons introduce and reinforce basic skills in the Unix shell and R, and are **
 
 ## Lessons:
 
-1. [Lesson 00 Introduction to the dataset]()
+1. [Lesson 00 Introduction to the dataset](https://jasonjwilliamsny.github.io/datadescription-genomics/)
 2. [Lesson 01 Before you download/import - Data Tidyness]()
 3. [Lesson 02a Connecting to the cloud in 5 min or less]()
 4. [Lesson 02b Connecting to the cluster in 5 min or less]()
