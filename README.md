@@ -1,2 +1,2 @@
-# dc_genomics
-organizational report for Data Carpentry genomics lessons
+# datadescription-genomics
+Description and information about the dataset used in the genomic lessons
