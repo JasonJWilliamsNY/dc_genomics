@@ -1,26 +1,106 @@
 ---
 layout: lesson
 root: .
-title: Intro to ecoli evo experiment
-minutes: 5
+lastupdated: January 21, 2015
+contributors: ["Jon Badalamenti","Amanda Charbonneau","Shari Ellis","Chris Fields","Bob Freeman","Chris Hamm","Randall Hayes","Josh Herr","Kate Hertweck","Adina Howe","Hilmar Lapp","Michael Linderman","Andréa Matsunaga","Blaine Marchant","Sue McClatchy","Sheldon McKay","Susan Miller","Jeramia Ory","Deborah Paul","Mary Shelley","Mike Smorul","Sara Stevens","Tracy Teal","Juan Ugalde","Jason Williams","Laura Williams","Ryan Williams", "Greg Wilson"]
+maintainers: ["TBD"]
+domain: Genomics
+topic: Skills for working with sequence data
+software: Linux Shell, R
+dataurl: ["https://www.ncbi.nlm.nih.gov/bioproject/PRJNA188723","http://www.nature.com/nature/journal/v489/n7417/full/nature11514.html","http://datadryad.org/resource/doi:10.5061/dryad.8q6n4"]
+status: In-development
 ---
 
-## Learning Objectives 
-* Have a general idea of the experiment and its objectives
-* Understand how and why we choose this dataset
+#Data Carpentry - Working with genome-scale sequence data
 
-## Lesson 
+**The purpose of Data Carpentry**
+Data Carpentry's aim is to teach researchers basic concepts, skills, and tools for working with data so that they can get more done in less time, and with less pain. 
 
-Microbes are ideal organisms for exploring 'Long-term Evolution Experiments' (LTEEs) - thousands of generations can be generated and stored in a way that would be virtually impossible for more complex eukaryotic systems. In Lenski et.al. 12 populations of *Escherichia coli* were propagated for more than 40,000 generations in a glucose-limited minimal medium. This medium was supplemented with citrate which *E. coli* cannot metabolize in the aerobic conditions of the experiment. Sequencing of the populations at regular time points reveals that spontaneous citrate-using mutants (Cit+) appeared in a population of *E.coli* (designated Ara-3) at around 31,000 generations. It should be noted that spontaneous Cit+ mutants are extraordinarily rare - inability to metabolize citrate is one of the defining characters of the *E. coli* species. Eventually, Cit+ mutants became the dominate population as the experimental growth medium contained a high concentration of citrate relative to glucose. 
+**Purpose of these lessons**
+These lessons teach fundamental data management and analysis skills needed to work with genomic data. Example workflows are used to illustrate the researchers skills needed to handle files, use bioinformatics tools, and analyze their output.
 
-Without going to deeply into the science of the paper (which the reader can review at their leisure) this dataset was selected for our exercise on NGS Data Carpentry for several reasons, including:
+**Teaching layout**
+Lessons are a series of modules designed for use at a two-day Data Carpentry workshop. They can also be covered by learners independently on their own - provided they follow the **Doing this on your own** setup requirements. Most lessons include work at the command line in the Unix shell (particularly the [Bash shell](https://en.wikipedia.org/wiki/Bash_%28Unix_shell%29). We will also cover visualization of datasets in R and with some other common genome visualization tools. 
 
-* Simple, but iconic NGS-problem: Examine a population where we want to characterize changes in sequence *a priori* 
-* Dataset publicly available - in this case through the NCBI Sequence Read Archive (http://www.ncbi.nlm.nih.gov/sra)
-* Small file sizes - while several of related files may still be hundreds of MBs, overall we will be able to get through more quickly then if we worked with a larger eukaryotic genome
+**Intended audience**
+We created for learners who are just starting to analyze a genomic dataset - which we define as any project that takes high-throughput (next-generation) sequence data to any number of endpoints (genome/transcriptome assembly, variant detection, RNA/ChIP-Seq, etc.). 
 
-####References
+Lessons introduce and reinforce basic skills in the Unix shell and R, and are **designed for learners with no programming experience.** The general topics covered include:
 
-Blount, Z.D., Barrick, J.E., Davidson, C.J., Lenski, R.E.
-Genomic analysis of a key innovation in an experimental Escherichia coli population
-(2012) Nature, 489 (7417), pp. 513-518.
+- Organizing a computational biology project
+- Understanding important file formats (FastQ, etc.)
+- Evaluation and quality control of data
+- Using the shell to automate, build pipelines, and explore data
+- Visualization of genomics data
+- Management and analysis of large data sets with high-performance and cloud computing
+
+**Content Contributors: {{page.contributors | join: ', ' %}}**
+
+
+**Lesson Maintainers: {{page.maintainers | join: ', ' %}}**
+
+
+**Lesson status: {{ page.status }}**
+
+<!--
+  [Information on Lesson Status Categories]()
+-->
+
+<!-- ###### INDEX OF LESSONS ON THIS TOPIC ###### -->
+
+## Lessons:
+
+1. [Lesson 00 Introduction to the dataset]()
+2. [Lesson 01 Before you download/import - Data Tidyness]()
+3. [Lesson 02a Connecting to to the cloud in 5 min or less]()
+4. [Lesson 02b Connecting to to the cluster in 5 min or less]()
+5. [Lesson 03 Getting started with the data - Importing/Downloading]()
+6. [Lesson 04 Unix Shell I - file system basics]()
+7. [Lesson 05 Unix Shell II - searching files and metadata]()
+8. [Lesson 06 Organizing and documenting your project - markdown]()
+9. [Lesson 07 File formats I - FastQ]()
+10. [Lesson 08 Quality control of sequence data - scaling with 'for' loops]()
+11. [Lesson 09 Building your first shell script - automating a QC pipeline]()
+12. [Lesson 10 Advanced shell script - automating and documenting your workflow]()
+13. [Lesson 11 File formats II - Other common bioinformatics file formats]()
+14. [Lesson 12a Visualization of genomics data I - browsers (IGV)]()
+15. [Lesson 12b Visualization of genomics data I - browsers (JBrowse?)]()
+16. [Lesson 13a Visualization of genomics data in R - R Shiny Apps]()
+
+---
+1. [Lesson 14 Introduction to R and R-Studio]()
+2. [Lesson 15 Summarizing and exploring genomics data in R - dplyr]()
+3. [Lesson 16 Plotting genomics data in R - ggplot]()
+
+
+
+
+
+## Data
+
+Data files for the lesson are available here: 
+[{{page.dataurl %}}]({{page.dataurl %}})
+
+Please download the *\*.csv* (Comma Separated Value) files: *species.csv*, *plots.csv*, *surveys.csv*, and *combined.csv*.
+
+### Requirements
+
+Data Carpentry's teaching is hands-on. *These lessons assume no prior knowledge of the skills or tools*, but you will need to follow our setup instructions so that you can connect to a virtual server (either an computing cluster or cloud virtual machine) your instructors will provide. Pease make sure to install everything *before* working through this lesson.
+
+<!--
+{% if page.software == "Python" %}
+{% include pythonSetup.html %}
+{% elsif page.software == "Spreadsheets" %}
+{% include spreadsheetSetup.html %}
+{% elsif page.software == "R" %}
+{% include rSetup.html %}
+{% else %}
+{% include anySetup.html %}
+{% endif %}
+-->
+
+<p><strong>Twitter</strong>: @datacarpentry</p>
+
+
+
+
