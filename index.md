@@ -7,12 +7,13 @@ maintainers: ["TBD"]
 domain: Genomics
 topic: Skills for working with sequence data
 software: Linux Shell, R
-dataurl: ["https://www.ncbi.nlm.nih.gov/bioproject/PRJNA188723 ","http://www.nature.com/nature/journal/v489/n7417/full/nature11514.html ","http://datadryad.org/resource/doi:10.5061/dryad.8q6n4 "]
+dataurl: "https://www.ncbi.nlm.nih.gov/bioproject/PRJNA188723"
 status: In-development
 ---
 
 #Data Carpentry - Working with genome-scale sequence data
-
+<br>
+<br>
 **The purpose of Data Carpentry**<br>
 Data Carpentry's aim is to teach researchers basic concepts, skills, and tools for working with data so that they can get more done in less time, and with less pain. 
 
