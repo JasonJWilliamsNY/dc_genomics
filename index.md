@@ -20,7 +20,7 @@ Data Carpentry's aim is to teach researchers basic concepts, skills, and tools f
 These lessons teach fundamental data management and analysis skills needed to work with genomic data. Example workflows are used to illustrate the researchers skills needed to handle files, use bioinformatics tools, and analyze their output.
 
 **Teaching layout**
-Lessons are a series of modules designed for use at a two-day Data Carpentry workshop. They can also be covered by learners independently on their own - provided they follow the **Doing this on your own** setup requirements. Most lessons include work at the command line in the Unix shell (particularly the [Bash shell](https://en.wikipedia.org/wiki/Bash_%28Unix_shell%29). We will also cover visualization of datasets in R and with some other common genome visualization tools. 
+Lessons are a series of modules designed for use at a two-day Data Carpentry workshop. They can also be covered by learners independently on their own - provided they follow the **Doing this on your own** setup requirements. Most lessons include work at the command line in the Unix shell (particularly the [Bash shell](https://en.wikipedia.org/wiki/Bash_%28Unix_shell%29)). We will also cover visualization of datasets in R and with some other common genome visualization tools. 
 
 **Intended audience**
 We created for learners who are just starting to analyze a genomic dataset - which we define as any project that takes high-throughput (next-generation) sequence data to any number of endpoints (genome/transcriptome assembly, variant detection, RNA/ChIP-Seq, etc.). 
