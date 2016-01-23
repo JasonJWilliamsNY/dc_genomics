@@ -7,11 +7,11 @@ maintainers: ["TBD"]
 domain: Genomics
 topic: Skills for working with sequence data
 software: Linux Shell, R
-dataurl: "https://www.ncbi.nlm.nih.gov/bioproject/PRJNA188723"
+dataurl: ["","",""]
 status: In-development
 ---
 
-#Data Carpentry - Working with genome-scale sequence data
+#Data Carpentry - Working with genome-scale sequence data 
 <br>
 <br>
 **The purpose of Data Carpentry**<br>
@@ -77,7 +77,11 @@ Lessons introduce and reinforce basic skills in the Unix shell and R, and are **
 ## Data
 
 Data files for the lesson are available here: 
-[{{page.dataurl %}}]({{page.dataurl %}})
+
+1. SRA Dataset: [https://www.ncbi.nlm.nih.gov/bioproject/PRJNA188723](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA188723)
+2. Paper [Nature]: [http://www.nature.com/nature/journal/v489/n7417/full/nature11514.html](http://www.nature.com/nature/journal/v489/n7417/full/nature11514.html)
+3. Dryad Figures: [http://datadryad.org/resource/doi:10.5061/dryad.8q6n4](http://datadryad.org/resource/doi:10.5061/dryad.8q6n4)
+
 
 ### Requirements
 
