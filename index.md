@@ -64,16 +64,19 @@ Lessons introduce and reinforce basic skills in the Unix shell and R, and are **
 11. [Lesson 09 Building your first shell script - automating a QC pipeline]()
 12. [Lesson 10 Advanced shell script - automating and documenting your workflow]()
 13. [Lesson 11 File formats II - Other common bioinformatics file formats]()
-14. [Lesson 12a Visualization of genomics data I - browsers (IGV)]()
-15. [Lesson 12b Visualization of genomics data I - browsers (JBrowse?)]()
-16. [Lesson 13a Visualization of genomics data in R - R Shiny Apps]()
-
+14. [Lesson 12 Moving data - data round tripping]()
+14. [Lesson 13a Visualization of genomics data I - browsers (IGV)]()
+15. [Lesson 13b Visualization of genomics data I - browsers (JBrowse?)]()
+16. [Lesson 14 Visualization of genomics data in R - R Shiny Apps]()
 ---
 ## R Lessons
 1. [Lesson 14 Introduction to R and R-Studio]()
 2. [Lesson 15 Summarizing and exploring genomics data in R - dplyr]()
 3. [Lesson 16 Plotting genomics data in R - ggplot]()
-
+---
+## Working on your own
+1. [Lesson 17 Start here if working on your own/or after the workshop]()
+---
 ## Data
 
 Data files for the lesson are available here: 
@@ -81,7 +84,6 @@ Data files for the lesson are available here:
 1. SRA Dataset: [https://www.ncbi.nlm.nih.gov/bioproject/PRJNA188723](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA188723)
 2. Paper [Nature]: [http://www.nature.com/nature/journal/v489/n7417/full/nature11514.html](http://www.nature.com/nature/journal/v489/n7417/full/nature11514.html)
 3. Dryad Figures: [http://datadryad.org/resource/doi:10.5061/dryad.8q6n4](http://datadryad.org/resource/doi:10.5061/dryad.8q6n4)
-
 
 ### Requirements
 
