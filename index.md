@@ -68,15 +68,21 @@ Lessons introduce and reinforce basic skills in the Unix shell and R, and are **
 14. [Lesson 13a Visualization of genomics data I - browsers (IGV)]()
 15. [Lesson 13b Visualization of genomics data I - browsers (JBrowse?)]()
 16. [Lesson 14 Visualization of genomics data in R - R Shiny Apps]()
+
 ---
+
 ## R Lessons
 1. [Lesson 14 Introduction to R and R-Studio]()
 2. [Lesson 15 Summarizing and exploring genomics data in R - dplyr]()
 3. [Lesson 16 Plotting genomics data in R - ggplot]()
+
 ---
+
 ## Working on your own
 1. [Lesson 17 Start here if working on your own/or after the workshop]()
+
 ---
+
 ## Data
 
 Data files for the lesson are available here: 
