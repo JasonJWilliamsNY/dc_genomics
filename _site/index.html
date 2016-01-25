@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+<link href="./css/bootstrap/bootstrap.css" rel="stylesheet" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="./css/bootstrap/bootstrap-responsive.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="./css/swc.css" />
+<link rel="stylesheet" type="text/css" href="./css/swc-bootstrap.css" />
+<meta charset="UTF-8" />
+<meta http-equiv="last-modified" content="" />
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="./css/lesson.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="banner">
+  <a href="http://datacarpentry.org" title="Data Carpentry">
+    <img alt="Data Carpentry banner" src="./img/DC1_logo_small.png" height="50px" />
+  </a>
+</div>
+
+
+      <div class="row-fluid">
+        <div class="span10 offset1">
+	  <!-- start content -->
+          
+          <h1>Data Carpentry - Working with genome-scale sequence data</h1>
+
+<p><br>
+<br>
+<strong>The purpose of Data Carpentry</strong><br>
+Data Carpentry&#39;s aim is to teach researchers basic concepts, skills, and tools for working with data so that they can get more done in less time, and with less pain. </p>
+
+<p><strong>Purpose of these lessons</strong><br>
+These lessons teach fundamental data management and analysis skills needed to work with genomic data. Example workflows are used to illustrate the researchers skills needed to handle files, use bioinformatics tools, and analyze their output.</p>
+
+<p><strong>Teaching layout</strong><br>
+Lessons are a series of modules designed for use at a two-day Data Carpentry workshop. They can also be covered by learners independently on their own - provided they follow the <strong>Doing this on your own</strong> setup requirements. Most lessons include work at the command line in the Unix shell (particularly the <a href="https://en.wikipedia.org/wiki/Bash_%28Unix_shell%29">Bash shell</a>). We will also cover visualization of datasets in R and with some other common genome visualization tools. </p>
+
+<p><strong>Intended audience</strong><br>
+We created for learners who are just starting to analyze a genomic dataset - which we define as any project that takes high-throughput (next-generation) sequence data to any number of endpoints (genome/transcriptome assembly, variant detection, RNA/ChIP-Seq, etc.). </p>
+
+<p>Lessons introduce and reinforce basic skills in the Unix shell and R, and are <strong>designed for learners with no programming experience.</strong> The general topics covered include:</p>
+
+<ul>
+<li>Organizing a computational biology project</li>
+<li>Understanding important file formats (FastQ, etc.)</li>
+<li>Evaluation and quality control of data</li>
+<li>Using the shell to automate, build pipelines, and explore data</li>
+<li>Visualization of genomics data</li>
+<li>Management and analysis of large data sets with high-performance and cloud computing</li>
+</ul>
+
+<p><strong>Content Contributors: Jon Badalamenti, Amanda Charbonneau, Shari Ellis, Chris Fields, Bob Freeman, Chris Hamm, Randall Hayes, Josh Herr, Kate Hertweck, Adina Howe, Hilmar Lapp, Michael Linderman, Andréa Matsunaga, Blaine Marchant, Sue McClatchy, Sheldon McKay, Susan Miller, Jeramia Ory, Deborah Paul, Mary Shelley, Mike Smorul, Sara Stevens, Tracy Teal, Juan Ugalde, Jason Williams, Laura Williams, Ryan Williams, Greg Wilson</strong></p>
+
+<p><strong>Lesson Maintainers: TBD</strong></p>
+
+<p><strong>Lesson status: In-development</strong></p>
+
+<!--
+  [Information on Lesson Status Categories]()
+-->
+
+<!-- ###### INDEX OF LESSONS ON THIS TOPIC ###### -->
+
+<h2>Lessons:</h2>
+
+<ol>
+<li><a href="">Lesson 00 Introduction to the dataset</a></li>
+<li><a href="">Lesson 01 Before you download/import - Data Tidyness</a></li>
+<li><a href="">Lesson 02a Connecting to the cloud in 5 min or less</a></li>
+<li><a href="">Lesson 02b Connecting to the cluster in 5 min or less</a></li>
+<li><a href="">Lesson 03 Getting started with the data - Importing/Downloading</a></li>
+<li><a href="">Lesson 04 Unix Shell I - file system basics</a></li>
+<li><a href="">Lesson 05 Unix Shell II - searching files and metadata</a></li>
+<li><a href="">Lesson 06 Organizing and documenting your project - markdown</a></li>
+<li><a href="">Lesson 07 File formats I - FastQ</a></li>
+<li><a href="">Lesson 08 Quality control of sequence data - scaling with &#39;for&#39; loops</a></li>
+<li><a href="">Lesson 09 Building your first shell script - automating a QC pipeline</a></li>
+<li><a href="">Lesson 10 Advanced shell script - automating and documenting your workflow</a></li>
+<li><a href="">Lesson 11 File formats II - Other common bioinformatics file formats</a></li>
+<li><a href="">Lesson 12a Visualization of genomics data I - browsers (IGV)</a></li>
+<li><a href="">Lesson 12b Visualization of genomics data I - browsers (JBrowse?)</a></li>
+<li><a href="">Lesson 13a Visualization of genomics data in R - R Shiny Apps</a></li>
+</ol>
+
+<hr>
+
+<h2>R Lessons</h2>
+
+<ol>
+<li><a href="">Lesson 14 Introduction to R and R-Studio</a></li>
+<li><a href="">Lesson 15 Summarizing and exploring genomics data in R - dplyr</a></li>
+<li><a href="">Lesson 16 Plotting genomics data in R - ggplot</a></li>
+</ol>
+
+<h2>Data</h2>
+
+<p>Data files for the lesson are available here: </p>
+
+<ol>
+<li>SRA Dataset: <a href="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA188723">https://www.ncbi.nlm.nih.gov/bioproject/PRJNA188723</a></li>
+<li>Paper [Nature]: <a href="http://www.nature.com/nature/journal/v489/n7417/full/nature11514.html">http://www.nature.com/nature/journal/v489/n7417/full/nature11514.html</a></li>
+<li>Dryad Figures: <a href="http://datadryad.org/resource/doi:10.5061/dryad.8q6n4">http://datadryad.org/resource/doi:10.5061/dryad.8q6n4</a></li>
+</ol>
+
+<h3>Requirements</h3>
+
+<p>Data Carpentry&#39;s teaching is hands-on. <em>These lessons assume no prior knowledge of the skills or tools</em>, but you will need to follow our setup instructions so that you can connect to a virtual server (either an computing cluster or cloud virtual machine) your instructors will provide. Pease make sure to install everything <em>before</em> working through this lesson.</p>
+
+<!--
+
+
+<div id="any">
+
+  <h3>Setting Up</h3>
+
+    <p>
+      This workshop may require some software installation, and details will be included here.
+
+    </p>
+
+
+    <div class="col-md-4">
+      <h4 id="windows">Windows</h4>
+      <ol>
+    <li>
+          Download and install 
+    </li>
+    <li>
+
+    </li>
+      </ol>
+    </div>
+
+
+    <div class="col-md-4">
+      <h4 id="macosx">Mac OS X</h4>
+      <ol>
+    <li>
+          Download and install
+    </li>
+    <li>
+
+    </li>
+      </ol>
+    </div>
+
+
+
+    <div class="col-md-4">
+      <h4 id="linux">Linux</h4>
+      <ol>
+    <li>
+      Download and install
+    </li>
+    <li>
+
+    </li>
+      </ol>
+    </div>
+
+
+</div> 
+
+
+-->
+
+<p><strong>Twitter</strong>: @datacarpentry</p>
+
+	  <!-- end content -->
+	</div>
+      </div>
+
+      <div class="footer">
+  <a class="label swc-blue-bg" href="">Facebook</a>
+  <a class="label swc-blue-bg" href="">Google+</a>
+  <a class="label swc-blue-bg" href="">Twitter</a>
+  <a class="label swc-blue-bg" href="">GitHub</a>
+  <a class="label swc-blue-bg" href="./LICENSE.html">License</a>
+  <a class="bugreport label swc-blue-bg" href="mailto:?subject=bug%20in%20index.md">Bug Report</a>
+</div>
+
+    </div>
+    <!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./js/jquery-1.9.1.min.js"></script>
+<script src="./js/bootstrap/bootstrap.min.js"></script>
+
+  </body>
+</html>
