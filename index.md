@@ -93,7 +93,7 @@ Data files for the lesson are available here:
 
 ### Requirements
 
-Data Carpentry's teaching is hands-on. *These lessons assume no prior knowledge of the skills or tools*, but you will need to follow our setup instructions so that you can connect to a virtual server (either an computing cluster or cloud virtual machine) your instructors will provide. Pease make sure to install everything *before* working through this lesson.
+Data Carpentry's teaching is hands-on. *These lessons assume no prior knowledge of the skills or tools*, but you will need to follow our [setup instructions](./install.html) so that you can connect to a virtual server (either an computing cluster or cloud virtual machine) your instructors will provide. Pease make sure to install everything *before* working through this lesson.
 
 <!--
 {% if page.software == "Python" %}
